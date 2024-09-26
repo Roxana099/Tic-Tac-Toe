@@ -1,0 +1,61 @@
+/* Global styles for centering and responsive layout */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #a42e86 0%, #eddcef 100%);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Game board styles */
+  table {
+    border-spacing: 0;
+    background-color: #fff;
+    border: 5px solid #333;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  td {
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 5em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border: 2px solid #333;
+  }
+  
+  td:hover {
+    background-color: #f0f0f0;
+  }
+  
+  td:active {
+    background-color: #ccc;
+  }
+  
+  /* Add styling for text (optional) */
+  h1 {
+    font-size: 2.5em;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 600px) {
+    td {
+      width: 80px;
+      height: 80px;
+      font-size: 2em;
+    }
+  
+    h1 {
+      font-size: 1.8em;
+    }
+  }
+  
